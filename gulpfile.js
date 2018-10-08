@@ -42,15 +42,15 @@ gulp.task('css', ()=> {
 } )
 gulp.task('js', ()=> {
     return gulp.src('src/js/**/*.js')
-    .pipe(concat('sript.js'))
+    .pipe(concat('script.js'))
     .pipe(uglify())
     .pipe(gulp.dest('dist/js'))
 });
 gulp.task('img', function(){
-    return gulp.src('src/img/**/*.{jpg,jpeg,png,gif}')
-    .pipe(changed('dist/images'))
+    return gulp.src('src/img/**/*.{jpg,jpeg,png,gif,svg}')
+    .pipe(changed('dist/img'))
     .pipe(imagemin())
-    .pipe(gulp.dest('dist/images'));
+    .pipe(gulp.dest('dist/img'));
 })
 gulp.task('html', ()=> {
     return gulp.src('src/*.html')
