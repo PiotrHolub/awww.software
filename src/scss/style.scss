@@ -1,0 +1,254 @@
+@import "_settings";
+
+ /* <---------------- HEADER SECTION -----------------> */
+.maindiv{
+    background-image: url("../img/bg.jpg");
+}
+.menu__logo-img{
+ padding-top: 45px;
+}
+.menu__list{
+    display: flex;
+    justify-content:flex-end;
+    margin-top: 45px;
+    a{
+        padding-left: 20px;
+        color: white;
+        text-decoration: none;
+    }
+}
+.onemenulist{
+    margin-left: 40px;
+}
+
+.menulistactive{
+    border:2px solid rgb(97, 102, 237);
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+}
+
+.advertisement{
+    padding-top:220px;
+    p{
+        color: rgb(114, 178, 242);
+    }
+    p:first-child{
+        font-size: 45px;
+        color: rgb(255, 255, 255);
+    }
+}
+.buttons{
+    margin-top:65px;
+    .buttons__first{
+        width:173px;
+        height:49px;
+        background-color: rgb(97, 102, 237);
+        color: white;
+        border: none;
+    }
+    .buttons__second{
+        border: none;
+        margin-left:20px;
+        width:234px;
+        height:49px;
+        background-color: rgb(48, 49, 100);
+        color: white;
+    }
+}
+.lottologo{
+    display: flex;
+    justify-content:space-between;
+    padding-top: 140px;
+    padding-bottom: 50px;
+}
+
+ /* <---------------- CONTENT  SECTION -----------------> */
+.illustration img{
+    width:100%;
+    padding-top:125px;
+}
+.article{
+    h4{
+        text-align:center;
+        padding-top:170px;
+        color:rgb(75, 71, 158);
+    }
+    p{
+        text-align:center;
+        padding-top: 40px;
+    }
+}
+
+/* <---------------- CARDS -----------------> */
+
+.cards{
+    display: flex;
+    justify-content:space-between;
+}
+.card{
+    width:250px;
+    box-shadow: 0 0 30px 1px lightgray;
+    margin-top: 140px;
+      button{
+        width:100%;
+        background-color: rgb(75, 71, 158);
+        border:none;
+        color: white;
+        height:54px;
+        span{
+            color: rgb(82, 234, 200);
+        }
+      }
+}
+.card-body{
+    padding-left: 40px;
+    padding-right: 50px;
+    img{
+        width:106px;
+        height:140px;
+    }
+    h5{
+        padding-top:30px;
+    }
+}
+
+/* <----------------  TECHNOLOGY SECTION  -----------------> */
+.first-technology-section{
+    background-color:rgb(240,240,240);
+    margin-top: 86px;
+}
+.h4style{
+    text-align:center;
+    padding-top:200px;
+    color:rgb(75, 71, 158);
+}
+.pstyle{
+    text-align:center;
+    padding-top:30px;
+}
+.img-technology{
+    img{
+        width:100%;
+        padding-top:100px;
+    }
+}
+
+/* <----------------  FOOTER  -----------------> */
+::-webkit-input-placeholder{
+    color: white;
+}
+
+.footerbg{
+    background-image: url("../img/footer.png");
+    margin-top: 100px;
+}
+.header-footer{
+    h3{
+        padding-top: 50px;
+        color: white;
+    }
+}
+
+.footer{
+    margin-top:30px;
+}
+.footer__contact{
+    padding-top:30px;
+    p{
+        color:white;
+        span{
+            color:$color-green;
+        }
+    }
+    .footer__contact-icons{
+        padding-top: 20px;
+        i:not(:first-child){
+            padding-left: 20px;
+        }
+        i:hover{
+            color: $color-green;
+            font-size: 20px;
+        }
+    }
+}
+.footer__contact-icons i{
+    color: white;
+}
+/* <----------------  FOOTER FORM -----------------> */
+.form-group{
+    label{
+        color:white;
+        font-size: 8px;
+    }
+    label:not(:first-child){
+        padding-top: 30px;
+    }
+    input{
+        height:40px;
+        background:none;
+        border:none;
+        border-bottom: 1px solid white;
+        width: 300px;
+        color: white;
+        font-size: 10px;
+    }
+     
+    input[type="text"] {  
+        outline: -webkit-focus-ring-color auto 0px;
+    }
+    textarea{
+        background:none!important;
+        border:none;
+        border-bottom: 1px solid white;
+        color: white!important;
+        width: 100%;
+    }
+   
+    textarea {  
+        outline: -webkit-focus-ring-color auto 0px;
+    }  
+    input[type="number"] {  
+        outline: -webkit-focus-ring-color auto 0px;
+    }
+    button[type="submit"] {  
+        outline: -webkit-focus-ring-color auto 0px;
+    }
+}
+#inputemail{
+    margin:5px 0 20px 20px
+}
+#inputsubject{
+    margin-left: 20px;
+}
+
+.sent-form{
+    display:flex;
+    justify-content:flex-end;
+    button{
+        background:none;
+        border:1px solid $color-green;
+        color:$color-green;
+        border-radius: 30px;
+        width: 220px;
+        height: 55px;
+        font-size: 12px;
+        margin-top: 25px;
+    }
+}
+
+.copyright{
+    p{
+        padding-top:55px;
+        color: white;
+        font-size: 12px;
+    }
+}
+
+/* <----------------  FOOTER FORM VALIDATION  -----------------> */
+.valid{
+    border-bottom: 2px solid $color-green !important;
+}
+
+.invalid{
+    border-bottom: 2px solid red !important;
+}
